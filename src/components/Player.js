@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
+
+import PlayerItem from "./PlayerItem";
+
 export default function Player() {
   const [duration, setDuration] = useState(undefined);
   const [secondsElapsed, setSecondsElapsed] = useState(undefined);
+  const [play, setPlay] = useState(false);
 
   const onDuration = duration => {
     setDuration(duration);
@@ -18,15 +22,24 @@ export default function Player() {
 
     if (Elapsed !== secondsElapsed) {
       setSecondsElapsed(Elapsed);
-      console.log(secondsElapsed);
     }
   };
   return (
-    <ReactPlayer
-      playing
-      url="https://cdns-preview-e.dzcdn.net/stream/c-ef165c70aced3094b98821c001d6bdba-4.mp3"
-      onDuration={onDuration}
-      onProgress={onProgress}
-    />
+    <>
+      <ReactPlayer
+        height={0}
+        width={0}
+        playing={play}
+        url="https://cdns-preview-e.dzcdn.net/stream/c-e29e115cd4eca233b1666155f92058b4-5.mp3"
+        onDuration={onDuration}
+        onProgress={onProgress}
+      />
+      <PlayerItem
+        setPlay={setPlay}
+        play={play}
+        duration={duration}
+        secondsElapsed={secondsElapsed}
+      />
+    </>
   );
 }
