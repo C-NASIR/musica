@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/musica/static/js/main.47dc9028.chunk.js",
-    "main.js.map": "/musica/static/js/main.47dc9028.chunk.js.map",
+    "main.js": "/musica/static/js/main.ab228cdc.chunk.js",
+    "main.js.map": "/musica/static/js/main.ab228cdc.chunk.js.map",
     "runtime-main.js": "/musica/static/js/runtime-main.6b093593.js",
     "runtime-main.js.map": "/musica/static/js/runtime-main.6b093593.js.map",
-    "static/js/2.4a294f17.chunk.js": "/musica/static/js/2.4a294f17.chunk.js",
-    "static/js/2.4a294f17.chunk.js.map": "/musica/static/js/2.4a294f17.chunk.js.map",
+    "static/js/2.f1c903ff.chunk.js": "/musica/static/js/2.f1c903ff.chunk.js",
+    "static/js/2.f1c903ff.chunk.js.map": "/musica/static/js/2.f1c903ff.chunk.js.map",
     "index.html": "/musica/index.html",
-    "precache-manifest.c9581d702dc5f152967f41659278f9e0.js": "/musica/precache-manifest.c9581d702dc5f152967f41659278f9e0.js",
+    "precache-manifest.c8efbeabbcec39f20da0003c1c5cb61c.js": "/musica/precache-manifest.c8efbeabbcec39f20da0003c1c5cb61c.js",
     "service-worker.js": "/musica/service-worker.js",
-    "static/js/2.4a294f17.chunk.js.LICENSE.txt": "/musica/static/js/2.4a294f17.chunk.js.LICENSE.txt"
+    "static/js/2.f1c903ff.chunk.js.LICENSE.txt": "/musica/static/js/2.f1c903ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6b093593.js",
-    "static/js/2.4a294f17.chunk.js",
-    "static/js/main.47dc9028.chunk.js"
+    "static/js/2.f1c903ff.chunk.js",
+    "static/js/main.ab228cdc.chunk.js"
   ]
 }
