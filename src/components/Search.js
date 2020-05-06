@@ -44,7 +44,10 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.down("lg")]: {
-      width: "15em",
+      width: "20em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "10em",
     },
   },
 }));

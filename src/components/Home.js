@@ -3,7 +3,6 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 //importing my components
@@ -21,7 +20,15 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
+    [theme.breakpoints.down("md")]: {
+      width: `calc(100% - ${drawerWidth - 50}px)`,
+      marginLeft: 0,
+    },
     [theme.breakpoints.down("sm")]: {
+      width: `calc(100% - ${drawerWidth - 70}px)`,
+      marginLeft: 0,
+    },
+    [theme.breakpoints.down("xs")]: {
       width: `calc(100%)`,
       marginLeft: 0,
     },
@@ -40,7 +47,7 @@ export default function Home() {
   const [artist, setArtist] = useState("drake");
   const classes = useStyles();
   const theme = useTheme();
-  const matchSM = useMediaQuery(theme.breakpoints.down("sm"));
+  const matchXS = useMediaQuery(theme.breakpoints.down("xs"));
 
   return (
     <div className={classes.root}>
@@ -50,7 +57,7 @@ export default function Home() {
           <Search setArtist={setArtist} />
         </Toolbar>
       </AppBar>
-      {!matchSM && <Sidebar artists={artists} setArtist={setArtist} />}
+      {!matchXS && <Sidebar artists={artists} setArtist={setArtist} />}
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Main artist={artist} />

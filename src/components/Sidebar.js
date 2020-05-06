@@ -16,14 +16,20 @@ const useStyles = makeStyles((theme) => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       width: drawerWidth - 50,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: drawerWidth - 70,
     },
   },
   drawerPaper: {
     width: drawerWidth,
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       width: drawerWidth - 50,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: drawerWidth - 70,
     },
   },
   title: {
