@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 //importing my components
 import Sidebar from "./Sidebar";
@@ -21,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
     [theme.breakpoints.down("sm")]: {
-      width: `calc(100% - ${drawerWidth - 50}px)`,
-      marginLeft: drawerWidth - 50,
+      width: `calc(100%)`,
+      marginLeft: 0,
     },
   },
   // necessary for content to be below app bar
@@ -38,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const [artist, setArtist] = useState("drake");
   const classes = useStyles();
+  const theme = useTheme();
+  const matchSM = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <div className={classes.root}>
@@ -49,7 +52,7 @@ export default function Home() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Sidebar artists={artists} setArtist={setArtist} />
+      {!matchSM && <Sidebar artists={artists} setArtist={setArtist} />}
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Main artist={artist} />

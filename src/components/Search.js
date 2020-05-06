@@ -57,15 +57,8 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     [theme.breakpoints.down("sm")]: {
-      width: "10em",
       "&:focus": {
-        width: "20em",
-      },
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "5em",
-      "&:focus": {
-        width: "10em",
+        width: "15em",
       },
     },
   },
