@@ -17,10 +17,9 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: fade(theme.palette.common.white, 0.25),
     },
     marginLeft: 0,
-    width: "auto",
+    width: "100%",
     [theme.breakpoints.up("sm")]: {
       marginLeft: theme.spacing(1),
-      width: "auto",
     },
   },
   searchIcon: {
@@ -45,21 +44,7 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.down("lg")]: {
-      width: "20em",
-      "&:focus": {
-        width: "40em",
-      },
-    },
-    [theme.breakpoints.down("md")]: {
-      width: "10em",
-      "&:focus": {
-        width: "30em",
-      },
-    },
-    [theme.breakpoints.down("sm")]: {
-      "&:focus": {
-        width: "15em",
-      },
+      width: "15em",
     },
   },
 }));

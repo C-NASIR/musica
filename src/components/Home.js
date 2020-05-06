@@ -46,10 +46,8 @@ export default function Home() {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <Typography variant="h6" noWrap>
-            <Search setArtist={setArtist} />
-          </Typography>
+        <Toolbar style={{ width: "100%" }}>
+          <Search setArtist={setArtist} />
         </Toolbar>
       </AppBar>
       {!matchSM && <Sidebar artists={artists} setArtist={setArtist} />}
