@@ -3,15 +3,15 @@ import ReactPlayer from "react-player";
 
 import PlayerItem from "./PlayerItem";
 
-export default function Player() {
+export default function Player(props) {
   const [duration, setDuration] = useState(undefined);
   const [secondsElapsed, setSecondsElapsed] = useState(undefined);
   const [play, setPlay] = useState(false);
 
-  const onDuration = duration => {
+  const onDuration = (duration) => {
     setDuration(duration);
   };
-  const onProgress = progress => {
+  const onProgress = (progress) => {
     if (!duration) {
       // Sadly we don't have the duration yet so we can't do anything
       return;
@@ -30,12 +30,15 @@ export default function Player() {
         height={0}
         width={0}
         playing={play}
-        url="https://cdns-preview-e.dzcdn.net/stream/c-e29e115cd4eca233b1666155f92058b4-5.mp3"
+        url={props.preview}
         onDuration={onDuration}
         onProgress={onProgress}
       />
       <PlayerItem
         setPlay={setPlay}
+        cover={props.cover}
+        album={props.album}
+        song={props.song}
         play={play}
         duration={duration}
         secondsElapsed={secondsElapsed}

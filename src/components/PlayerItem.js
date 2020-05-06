@@ -41,8 +41,9 @@ export default function PlayerItem(props) {
   };
 
   return (
-    <List subheader={<ListSubheader> Hello </ListSubheader>}>
+    <List subheader={<ListSubheader> {props.album}</ListSubheader>}>
       <ListItem
+        selected={props.play}
         divider
         button
         onMouseEnter={() => setHovered(true)}
@@ -53,16 +54,14 @@ export default function PlayerItem(props) {
           <IconButton
             className={classes.iconButton}
             onClick={() => props.setPlay(!props.play)}
+            selected
           >
             {getCorrectIcon()}
           </IconButton>
-          <Avatar
-            variant="square"
-            src="https://e-cdns-images.dzcdn.net/images/cover/e6f3afd8a5c3d8ea797f458694166e47/56x56-000000-80-0-0.jpg"
-          />
+          <Avatar variant="square" src={props.cover} />
         </ListItemIcon>
         <ListItemText>
-          <Typography style={{ marginLeft: "1em" }}> Killing it </Typography>
+          <Typography style={{ marginLeft: "1em" }}> {props.song} </Typography>
         </ListItemText>
         <ListItemText style={{ textAlign: "end" }}>
           <Typography> {getTime()} </Typography>
