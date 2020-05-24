@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/www.cnasir.dev/static/js/main.ab228cdc.chunk.js",
-    "main.js.map": "/www.cnasir.dev/static/js/main.ab228cdc.chunk.js.map",
-    "runtime-main.js": "/www.cnasir.dev/static/js/runtime-main.7e06234e.js",
-    "runtime-main.js.map": "/www.cnasir.dev/static/js/runtime-main.7e06234e.js.map",
-    "static/js/2.f1c903ff.chunk.js": "/www.cnasir.dev/static/js/2.f1c903ff.chunk.js",
-    "static/js/2.f1c903ff.chunk.js.map": "/www.cnasir.dev/static/js/2.f1c903ff.chunk.js.map",
-    "index.html": "/www.cnasir.dev/index.html",
-    "precache-manifest.d27bd98a568ecad8057aaa6eb6497d27.js": "/www.cnasir.dev/precache-manifest.d27bd98a568ecad8057aaa6eb6497d27.js",
-    "service-worker.js": "/www.cnasir.dev/service-worker.js",
-    "static/js/2.f1c903ff.chunk.js.LICENSE.txt": "/www.cnasir.dev/static/js/2.f1c903ff.chunk.js.LICENSE.txt"
+    "main.js": "/musica/static/js/main.ab228cdc.chunk.js",
+    "main.js.map": "/musica/static/js/main.ab228cdc.chunk.js.map",
+    "runtime-main.js": "/musica/static/js/runtime-main.6b093593.js",
+    "runtime-main.js.map": "/musica/static/js/runtime-main.6b093593.js.map",
+    "static/js/2.f1c903ff.chunk.js": "/musica/static/js/2.f1c903ff.chunk.js",
+    "static/js/2.f1c903ff.chunk.js.map": "/musica/static/js/2.f1c903ff.chunk.js.map",
+    "index.html": "/musica/index.html",
+    "precache-manifest.c8efbeabbcec39f20da0003c1c5cb61c.js": "/musica/precache-manifest.c8efbeabbcec39f20da0003c1c5cb61c.js",
+    "service-worker.js": "/musica/service-worker.js",
+    "static/js/2.f1c903ff.chunk.js.LICENSE.txt": "/musica/static/js/2.f1c903ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7e06234e.js",
+    "static/js/runtime-main.6b093593.js",
     "static/js/2.f1c903ff.chunk.js",
     "static/js/main.ab228cdc.chunk.js"
   ]
